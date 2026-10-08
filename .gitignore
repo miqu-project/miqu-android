@@ -1,0 +1,32 @@
+# Gradle & Build artifacts
+.gradle/
+*/.gradle/
+build/
+*/build/
+*/*/build/
+.kotlin/
+*/.kotlin/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*/.idea/
+*.iml
+*/*.iml
+local.properties
+*/local.properties
+
+# Android specific
+captures/
+.externalNativeBuild/
+.cxx/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Recitation pipeline data and heavy outputs
+recitation/tools/quran-wbw-pipeline/data/
+**/tools/quran-wbw-pipeline/data/
+**/tools/quran-wbw-pipeline/**/*.pdf
+recitation/tools/quran-wbw-pipeline/studio/pages/
+recitation/tools/quran-wbw-pipeline/studio/modified/
