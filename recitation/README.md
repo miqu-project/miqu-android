@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="play_store_512.png" alt="Miqu Recitation Logo" width="160" />
+</p>
+
 # Recitation 📖
 
 An offline, feature-rich Quran study companion and Arabic linguistic analysis app for Android.
