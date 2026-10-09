@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="play_store_512.png" alt="Miqu Doctor Logo" width="160" />
+</p>
+
 # Doctor 🩺
 
 An offline clinical utility and medical reference application for Android, designed for healthcare professionals, medical students, and clinicians.

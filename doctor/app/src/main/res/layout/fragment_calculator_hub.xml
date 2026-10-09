@@ -14,7 +14,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-
         <!-- Pregnancy Calculator Card (Thin Tile) -->
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardPregnancy"

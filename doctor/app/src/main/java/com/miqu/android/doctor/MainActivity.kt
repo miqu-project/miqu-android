@@ -40,6 +40,17 @@ class MainActivity : AppCompatActivity() {
         binding.topToolbar.setupWithNavController(navController, appBarConfiguration)
         binding.bottomNav.setupWithNavController(navController)
 
+        // Top toolbar menu
+        binding.topToolbar.inflateMenu(R.menu.menu_main)
+        binding.topToolbar.setOnMenuItemClickListener { menuItem ->
+            if (menuItem.itemId == R.id.action_about) {
+                showAboutDialog()
+                true
+            } else {
+                false
+            }
+        }
+
         // Show/hide bottom nav based on destination
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id in topLevelDestinations) {
@@ -48,5 +59,13 @@ class MainActivity : AppCompatActivity() {
                 binding.bottomNav.visibility = View.GONE
             }
         }
+    }
+
+    private fun showAboutDialog() {
+        val dialogView = layoutInflater.inflate(R.layout.dialog_about, null)
+        com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
+            .setView(dialogView)
+            .setPositiveButton("Close", null)
+            .show()
     }
 }
